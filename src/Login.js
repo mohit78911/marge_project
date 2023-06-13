@@ -56,15 +56,15 @@ function Login(props) {
         } else {
           console.log("Successfull user Login " );
            history("/Details");
-           enableLoginStaus();
+           localStorage.setItem("Login",true)
         }
       }
     }
   };
 
-  const enableLoginStaus = ()=>{ 
-    props.setLoginStatus(true)
-  }
+  // const enableLoginStaus = ()=>{ 
+  //   props.setLoginStatus(true)
+  // }
  
   return (
     <div>

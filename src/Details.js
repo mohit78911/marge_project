@@ -5,6 +5,7 @@ import Table from "./Table";
 import InputBox from "./InputBox";
 import Navbar from "./Navbar";
 // import { TextField } from "@mui/material";
+import ".//Details.css"
 
 export default function Details(props) {
 
@@ -20,12 +21,7 @@ export default function Details(props) {
       setLoginData(user);
     }
   };
-
-  const logOut = (e)=>{
-    e.preventDefault();
-    localStorage.removeItem("mohitdata")
-    // disableLoginStaus();
-  }
+ 
   useEffect(() => {
     getDetails();
   },[]);
@@ -101,9 +97,11 @@ export default function Details(props) {
       <br />
       <div>Welcome,Buddy</div>
       {loginData.length === 0 ? "error" : <h3>{loginData[0].name}</h3>}
-      {/* <NavLink className="btn btn-primary logbtn" onClick={()=>logOut()} to="/login" >
+
+      {/* Alternative Button for logout the page */}
+      {/* <button className="btn btn-primary logbtn" onClick={()=>logOut()} >
         LogOut
-      </NavLink> */}
+      </button> */}
       <br />
       <div>
         

@@ -1,16 +1,17 @@
 import React from 'react'
 import { TextField, Box } from '@mui/material';
 import ".//App.css"
-// import logo from './api.jpg'
+import logo from './apilogo.jpg'
 // import TextField from '@mui/material';
 
 function InputBox(props) {
     return (
         <div >
-            <div className='container' style={{width:"100%"}}>
+            <div className='container'>
         <div className='row container'>
             <div className='col'>
-            <h1 className="ffamily">Input box</h1>
+                <div className='formWrapper'>
+            <h1 className="ffamily">Details Form</h1>
             <form onSubmit={props.onSubmit}> <Box
                 component="form"
                 sx={{
@@ -40,10 +41,10 @@ function InputBox(props) {
             </form>
             <button className='btn btn-success m-2' onClick={()=>props.editHandler()}>Edit Data</button>
             <button className='btn btn-secondary m-2' onClick={()=>props.clearHandler()}>Clear Box</button>
-
+            </div>
             </div>
             <div className='col '>
-             {/* <img className='floatPro round' src={logo}/> */}
+             <img className='imageWrapper round' src={logo}  />
             </div>
         </div>
         </div>

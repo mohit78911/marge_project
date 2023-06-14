@@ -62,10 +62,6 @@ function Login(props) {
     }
   };
 
-  // const enableLoginStaus = ()=>{ 
-  //   props.setLoginStatus(true)
-  // }
- 
   return (
     <div>
       <h3 style={{opacity:"0.2",textDecoration:"underline"}}>Login Form</h3>

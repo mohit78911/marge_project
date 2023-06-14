@@ -13,43 +13,39 @@ export default function Navbar(props) {
     navigate("/");
   };
   return (
+    <>
     <div>
-      <div>
-        <div className="row align ">
-          <div className="col">
-            <h4 className="align floatleft font">Authentication Form</h4>
-          </div>
-          <div className="col">
-            <ul className="floatright">
+      <nav>
+        <div className="logoNameWrapper">
+        <h4 >Authentication Form</h4>
+        </div>
+        <div>
+        <ul >
               <li>
-                <NavLink className="navStyle" to="/">
+                <NavLink to="/">
                   Home
                 </NavLink>
               </li>
               <li>
-                <NavLink className="navStyle" to="/login">
+                <NavLink  to="/login">
                   login
                 </NavLink>
               </li>
               <li>
                 {login ? (
                   <div>
-                    <button  style={{
-                      backgroundColor: "#0d6efd",
-                      color: "white",
-                      padding: "8px",
-                      borderRadius: "10px",
-                    }} className="navStyle" onClick={handleLogout}>
-                      
+                    <button className="navStyleLogout btn btn-danger" onClick={handleLogout}>
                       Logout
                     </button>
                   </div>
                 ) : null}
               </li>
             </ul>
-          </div>
         </div>
-      </div>
+      </nav>
     </div>
+
+    </>
+    
   );
 }

@@ -94,15 +94,15 @@ export default function Details(props) {
   // }
   return (
     <>
-      <br />
+       
       <div>Welcome,Buddy</div>
-      {loginData.length === 0 ? "error" : <h3>{loginData[0].name}</h3>}
+      {loginData.length === 0 ? "error" : <h3 style={{color:"darkgreen"}}>{loginData[0].name}</h3>}
 
       {/* Alternative Button for logout the page */}
       {/* <button className="btn btn-primary logbtn" onClick={()=>logOut()} >
         LogOut
       </button> */}
-      <br />
+       
       <div>
         
       <Table

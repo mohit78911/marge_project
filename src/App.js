@@ -7,14 +7,14 @@ import Navbar from './Navbar';
  
 
  function App() {
-  const [loginStatus,setLoginStatus] = useState(false)
+   
   return (
     <div>
        <BrowserRouter>
-       <Navbar loginStatus={loginStatus}/>
+       <Navbar/>
         <Routes>
         <Route path='/' element={<Home/>}/>
-        <Route path='/login' element={<Login setLoginStatus={setLoginStatus}/>}/>
+        <Route path='/login' element={<Login />}/>
         <Route path='/details' element={<Details/>}/>
         </Routes>
        </BrowserRouter>

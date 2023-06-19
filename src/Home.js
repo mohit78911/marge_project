@@ -99,11 +99,12 @@ function Home() {
           {/* first colum end */}
           {/* second colum start */}
           <div className="col">
-            <img
+            <div >
+              <br/><br/>
+            <img  width={"100%"}
               src="https://cdn.dribbble.com/users/846207/screenshots/9192312/media/c821e24ed3cc26b9e43e2decfdee20ce.gif"
-              width={800}
-              height={500}
             />
+            </div>
           </div>
           {/* second colum end */}
         </div>
